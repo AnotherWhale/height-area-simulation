@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    /* Remove body margin to make the graph take full width */
+}
+
+.container {
+    width: 100%;
+    /* Set container width to 100% of the screen */
+    height: 100vh;
+    /* Set container height to 100% of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heightArray {
+    width: 90%;
+    /* Expand the input box to 90% of the screen width */
+    padding: 5px;
+}
+
+#startSimulation {
+    padding: 5px 15px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.graph-container {
+    margin-top: 30px;
+    width: 100%;
+    /* Set graph width to 100% of the container */
+    height: 60vh;
+    /* Set graph height to 60% of the screen height */
+    position: relative;
+}
+
+#graph {
+    display: flex;
+    justify-content: space-evenly;
+    /* Space bars evenly across the screen */
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    /* Make the graph take the full width of the screen */
+    position: relative;
+}
+
+.bar {
+    background-color: lightblue;
+    text-align: center;
+    width: 20px;
+    /* Make bars narrower so more can fit on the screen */
+    position: relative;
+}
+
+.highlight {
+    background-color: #ff4d4d;
+}
+
+#max-area {
+    position: absolute;
+    background-color: rgba(0, 128, 255, 0.3);
+    z-index: 10;
+}
